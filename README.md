@@ -8,8 +8,8 @@ This plugin loads Kubernetes ConfigMap, Secret and String Data values as environ
 | Branch | IntelliJ |
 |:---:|:---:|
 | 1.0.x   | 2018+    |
-| 1.1.x   | 2019+    |
-| 1.2.x   | 2019.2   |
+| 1.1.x   | 2019.1   |
+| 1.2.x   | 2019.2, 2019.3 |
 
 ### Plugin Installation
 

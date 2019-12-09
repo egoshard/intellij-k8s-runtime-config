@@ -16,7 +16,7 @@
 <idea-plugin>
     <id>com.egoshard.intellij.k8s-runtime-config-plugin</id>
     <name>Kubernetes Runtime Configuration</name>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
     <vendor email="egoshard@gmail.com" url="https://github.com/egoshard/intellij-k8s-runtime-config">Matt Trefethen</vendor>
     <description><![CDATA[
     <p>This plugin loads Kubernetes ConfigMap, Secret and String Data values as environment variables in an IntelliJ run configuration.
@@ -41,6 +41,11 @@
     ]]></description>
     <change-notes>
         <![CDATA[
+        <p><strong>1.2.2</strong>:</p>
+        <ul>
+            <li>Update gradle-intellij-plugin and added support for Intellij 2019.3</li>
+        </ul>
+
         <p><strong>1.2.0</strong>:</p>
         <ul>
             <li>Update gradle-intellij-plugin and added support for Intellij 2019.2</li>
@@ -62,7 +67,7 @@
         </ul>
         ]]>
     </change-notes>
-    <idea-version since-build="192"/>
+    <idea-version since-build="193"/>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">

@@ -18,7 +18,7 @@ plugins {
     id 'org.jetbrains.intellij' version '0.4.10'
 }
 
-version '1.2.2'
+version '1.2.3'
 
 ext {
     junitJupiterVersion = '5.3.1'
@@ -47,12 +47,12 @@ test {
 }
 
 intellij {
-    version '2019.3'
+    version '2020.1'
     plugins 'java'
 }
 
 patchPluginXml {
-    sinceBuild '193'
+    sinceBuild '201'
 }
 
 wrapper {

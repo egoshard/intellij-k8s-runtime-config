@@ -175,24 +175,6 @@ class ConfigEditorTest {
     }
 
     @SuppressWarnings("unchecked")
-    @DisplayName("Tests configuration validation failure")
-    @Test
-    void testValidateFail() {
-
-        String badPath = "badpath";
-        ConfigEntry mockEntry = mock(ConfigEntry.class);
-        doReturn(false).when(mockEntry).validate();
-        doReturn(badPath).when(mockEntry).getPath();
-        ConfigSettings settings = new ConfigSettings(true, Collections.singletonList(
-                mockEntry
-        ));
-        doReturn(settings).when(mockConfig).getUserData(any(Key.class));
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> ConfigEditor.validate(mockConfig));
-        assertEquals(String.format(MSG_PATH_INVALID, badPath), exception.getMessage());
-
-    }
-
-    @SuppressWarnings("unchecked")
     @DisplayName("Tests configuration parsing")
     @Test
     void testParse() throws ExecutionException, FileNotFoundException {
